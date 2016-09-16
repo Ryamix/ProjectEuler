@@ -20,9 +20,17 @@ int temp = 1;
       temp = n;
       for (int g = 1; g < n; g++)
       {
-        if (max%n == 0) // this shyt does not work. Why the fuck did I think so would work? Fuck I look like
-        {
-          max = temp;
+          int maxb = max;
+         while (max%g !=0)
+         {
+            if (max%g != 0) // this shyt does not work. Why the fuck did I think so would work? Fuck I look like
+            {
+              max = temp;
+            }
+            else 
+            {
+                max = maxb;
+            }
         }
       }
     }
