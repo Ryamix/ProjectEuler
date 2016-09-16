@@ -6,9 +6,6 @@
 //
 // SOLUTION
 
-include <iostream>
-using namespace std;
-
 #include <iostream>
 using namespace std;
 
@@ -20,6 +17,7 @@ int temp = 1;
   {
     if (600851475143%n==0)
     {
+      temp = n;
       if (temp > max)
       {
         for (int g = 1; g < n; g++)
